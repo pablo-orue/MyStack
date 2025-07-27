@@ -2,8 +2,9 @@
 using MyStack.KeepAlive.Domain;
 using MyStack.Money.Domain;
 
-namespace WebAPI.EF
+namespace MyStack.Infrastructure.EF
 {
+    
     public class OrueContext : DbContext
     {
         public OrueContext(DbContextOptions<OrueContext> options)

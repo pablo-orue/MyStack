@@ -5,15 +5,16 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebAPI.EF;
+using MyStack.Infrastructure.EF;
+
 
 #nullable disable
 
-namespace WebAPI.Migrations
+namespace MyStack.Infraestructure.Migrations
 {
     [DbContext(typeof(OrueContext))]
-    [Migration("20250726221505_AddNotesToTradeAgain")]
-    partial class AddNotesToTradeAgain
+    [Migration("20250726221505_AddNotesToTrade")]
+    partial class AddNotesToTrade : Migration 
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

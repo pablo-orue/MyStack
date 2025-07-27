@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
+using MyStack.Infrastructure.EF;
+
 
 namespace WebAPI.EF
 {
@@ -9,7 +12,7 @@ namespace WebAPI.EF
         {
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory()) 
-                .AddJsonFile("appsettings.json")              
+                .AddJsonFile("appsettings.json")
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<OrueContext>();

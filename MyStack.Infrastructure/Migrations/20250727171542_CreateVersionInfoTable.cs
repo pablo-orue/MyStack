@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace WebAPI.Migrations
+namespace MyStack.Infraestructure.Migrations
 {
     /// <inheritdoc />
     public partial class CreateVersionInfoTable : Migration

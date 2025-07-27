@@ -3,20 +3,18 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using MyStack.Infrastructure.EF;
 using WebAPI.EF;
 
 #nullable disable
 
-namespace WebAPI.Migrations
+namespace MyStack.Infraestructure.Migrations
 {
     [DbContext(typeof(OrueContext))]
-    [Migration("20250727171542_CreateVersionInfoTable")]
-    partial class CreateVersionInfoTable
+    partial class OrueContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
