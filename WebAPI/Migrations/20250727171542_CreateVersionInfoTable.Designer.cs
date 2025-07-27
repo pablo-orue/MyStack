@@ -12,8 +12,8 @@ using WebAPI.EF;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(OrueContext))]
-    [Migration("20250726221004_AddNotesToTrade")]
-    partial class AddNotesToTrade
+    [Migration("20250727171542_CreateVersionInfoTable")]
+    partial class CreateVersionInfoTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,24 @@ namespace WebAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("MyStack.KeepAlive.Domain.VersionInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VersionInfo", (string)null);
+                });
 
             modelBuilder.Entity("MyStack.Money.Domain.Trade", b =>
                 {
@@ -51,6 +69,10 @@ namespace WebAPI.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Notes")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<decimal>("Quantity")
                         .HasColumnType("decimal(18,2)");

@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyStack.KeepAlive.Domain\MyStack.KeepAlive.Domain.csproj" />
     <ProjectReference Include="..\MyStack.Money.Domain\MyStack.Money.Domain.csproj" />
   </ItemGroup>
 
