@@ -1,14 +1,11 @@
 using Azure.Identity;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using MyStack.Infrastructure.EF;
 using MyStack.KeepAlive.Service;
+using MyStack.Money.Service;
 using WebAPI;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
@@ -20,9 +17,8 @@ builder.Configuration.AddAzureKeyVault(
 
 builder.Services.AddDbContext<OrueContext>(options => options.UseSqlServer(builder.Configuration["OrueConnectionString"]));
 
-
 builder.Services.AddScoped<IKeepAliveService, KeepAliveService>();
-
+builder.Services.AddScoped<ITradeService, TradeService>();
 
 if (!builder.Environment.IsDevelopment())
 {
@@ -34,7 +30,6 @@ builder.Services.AddApplicationInsightsTelemetry(new Microsoft.ApplicationInsigh
 });
 
 var app = builder.Build();
-
 
 if (app.Environment.IsDevelopment())
 {

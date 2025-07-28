@@ -23,7 +23,9 @@
     <ProjectReference Include="..\MyStack.Infrastructure\MyStack.Infrastructure.csproj" />
     <ProjectReference Include="..\MyStack.KeepAlive.Domain\MyStack.KeepAlive.Domain.csproj" />
     <ProjectReference Include="..\MyStack.KeepAlive.Service\MyStack.KeepAlive.Service.csproj" />
+    <ProjectReference Include="..\MyStack.Money.Contracts\MyStack.Money.Contracts.csproj" />
     <ProjectReference Include="..\MyStack.Money.Domain\MyStack.Money.Domain.csproj" />
+    <ProjectReference Include="..\MyStack.Money.Service\MyStack.Money.Service.csproj" />
   </ItemGroup>
 
 </Project>

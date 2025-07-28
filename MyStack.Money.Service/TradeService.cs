@@ -4,7 +4,7 @@ using MyStack.Money.Domain;
 
 namespace MyStack.Money.Service
 {
-    internal class TradeService : ITradeService
+    public class TradeService : ITradeService
     {
         private readonly OrueContext _context;
 
