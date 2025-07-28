@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.Money.Service", "My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.Money.Contracts", "MyStack.Money.Contracts\MyStack.Money.Contracts.csproj", "{938854DC-4836-414B-ACC5-ED76E917C323}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.Money.NetMAUI", "MyStack.Money.NetMAUI\MyStack.Money.NetMAUI.csproj", "{E0804E01-BC37-4133-8F21-2A5FDFB5F24B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{938854DC-4836-414B-ACC5-ED76E917C323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938854DC-4836-414B-ACC5-ED76E917C323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938854DC-4836-414B-ACC5-ED76E917C323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0804E01-BC37-4133-8F21-2A5FDFB5F24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0804E01-BC37-4133-8F21-2A5FDFB5F24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0804E01-BC37-4133-8F21-2A5FDFB5F24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0804E01-BC37-4133-8F21-2A5FDFB5F24B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
