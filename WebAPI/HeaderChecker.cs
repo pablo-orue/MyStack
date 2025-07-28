@@ -23,13 +23,12 @@
 
             var request = context.Request.Path.Value!.ToLower();
 
-            var epep = context.Request.Headers["key"];
 
             if (excludedPaths.Contains(request))
             {
                 await _next.Invoke(context);
             }
-            else if (context.Request.Headers.TryGetValue("key", out Microsoft.Extensions.Primitives.StringValues value) && value == _webApiKey)
+            else if (context.Request.Headers.TryGetValue("x-api-key", out Microsoft.Extensions.Primitives.StringValues value) && value == _webApiKey)
             {
                 await _next.Invoke(context);
             }

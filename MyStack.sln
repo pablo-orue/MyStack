@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.KeepAlive.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.Infrastructure", "MyStack.Infrastructure\MyStack.Infrastructure.csproj", "{2EE091B7-365F-460A-9D6C-8B233BB10DBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStack.KeepAlive.Console", "MyStack.KeepAlive.Console\MyStack.KeepAlive.Console.csproj", "{9A3C09C3-4DB8-44E1-A280-85E679D40829}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2EE091B7-365F-460A-9D6C-8B233BB10DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EE091B7-365F-460A-9D6C-8B233BB10DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EE091B7-365F-460A-9D6C-8B233BB10DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3C09C3-4DB8-44E1-A280-85E679D40829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3C09C3-4DB8-44E1-A280-85E679D40829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3C09C3-4DB8-44E1-A280-85E679D40829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3C09C3-4DB8-44E1-A280-85E679D40829}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
